@@ -1,0 +1,333 @@
+/* Reset de estilos */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.border:hover {
+  border-bottom: 5px solid rgb(98, 37, 94);
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+#flex {
+  display: flex;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu ul {
+  display: flex;
+}
+.menu li {
+  padding: 0.5rem;
+}
+.menu ul li a {
+  font-weight: bolder;
+  font-size: larger;
+  color: rgb(104, 104, 104);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+.titulosForm {
+  color: rgb(98, 37, 94);
+  font-weight: bold;
+}
+h1 {
+  color: rgb(104, 104, 104);
+}
+.centrado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.genero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+h2 {
+  color: rgb(104, 104, 104);
+  display: inline-block;
+  margin: 10px;
+}
+p {
+  color: rgb(98, 37, 94);
+}
+label {
+  color: rgba(10, 10, 10, 0.356);
+}
+fieldset {
+  border: 5px ridge rgb(085, 065, 158);
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+legend {
+  color: rgb(104, 104, 104);
+  font-size: medium;
+}
+.extremos {
+  background-color: white;
+  padding: 1.5rem;
+  border-top: 10px solid rgb(98, 37, 94);
+  border-bottom: 10px solid rgb(98, 37, 94);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  margin: 30px;
+}
+/* .margin {
+  margin-left: 30px;
+} */
+.checkbox {
+  width: fit-content;
+}
+input {
+  display: block;
+  width: 260px;
+  height: 30px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 7px;
+
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  transition: 0.5s;
+  /*   &:focus {
+    outline-width: 0;
+    background: rgba(31, 134, 252, 0.15);
+    transition: background 0.5s;
+  } */
+}
+
+.colorBox {
+  background-color: rgb(248, 244, 244);
+  position: relative;
+}
+.campos {
+  display: grid;
+}
+#datos {
+  height: 70vh;
+}
+.alineCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* #ciudad {
+  position: relative;
+  top: 20px;
+} */
+
+/* #boxContact {
+  border-radius: 60px;
+  top: 60px;
+} */
+
+#fondo {
+  position: relative;
+  width: 50vw;
+  /*  z-index: -2; */
+}
+#right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ventana {
+  background-color: whitesmoke;
+  width: 800px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: -250px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+#IrVentanaFlotante:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 102px;
+  border-color: rgb(98, 37, 94);
+  border-style: solid;
+  border-width: 3px;
+  margin-top: 35px;
+  margin-left: 60px;
+}
+/* .opcion {
+  width: 100px;
+        background-color:yellow;
+border:1px solid black;
+} */
+
+/* CARROUSEL */
+
+.carousel {
+  display: block;
+  font-size: 0;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: white;
+  transform: translateZ(0);
+  height: 270px;
+  -webkit-overflow-scrolling: touch;
+  /* for tablets */
+}
+.touch .carousel {
+  overflow: auto;
+}
+.carousel[data-at*="left"] > .wrap::before {
+  opacity: 1;
+  text-indent: -50px;
+}
+.carousel[data-at*="right"] > .wrap::after {
+  opacity: 1;
+  text-indent: -50px;
+}
+.carousel::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 4;
+  bottom: -4px;
+  left: 0;
+  background: #d82b6a;
+  height: 4px;
+  border-radius: 4px;
+  opacity: 0;
+  width: var(--scrollWidth, 0);
+  left: var(--scrollLleft, 0);
+  transition: opacity 0.2s, bottom 0.2s;
+}
+.carousel:hover::after {
+  opacity: 1;
+  bottom: -10px;
+}
+.carousel > .wrap {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.carousel > .wrap::before,
+.carousel > .wrap::after {
+  content: "‹";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 50px;
+  font-size: 80px;
+  text-indent: -30px;
+  line-height: 200px;
+  font-family: monospace;
+  color: #555;
+  font-weight: bold;
+  border-radius: 8px;
+  pointer-events: none;
+  transition: 0.2s ease-out;
+  background: linear-gradient(to right, white 20%, transparent);
+}
+.carousel > .wrap::after {
+  transform: rotate(180deg);
+  left: auto;
+  right: 0;
+}
+.carousel > .wrap > ul {
+  list-style: none;
+  white-space: nowrap;
+  height: 250px;
+}
+.carousel > .wrap > ul > li {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin: 0 0 0 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.25s ease-out;
+}
+.carousel > .wrap > ul > li:first-child {
+  margin: 0;
+}
+.carousel > .wrap > ul > li > img {
+  display: block;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  transition: 1s ease;
+}
+
+body {
+  background: #eee;
+}
+
+.carousel {
+  position: relative;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  max-width: 1100px;
+  min-width: 550px;
+  margin: auto;
+}

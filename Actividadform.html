@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Actividad Formulario</title>
+</head>
+
+<body>
+    <header class="extremos header">
+        <div class="logo"><img src="./src/img/Diego Suescun.jpeg" alt="IPS_LOGO"></div>
+        <nav class="menu">
+            <ul>
+                <li><a class="border" href="#">Inicio</a></li>
+                <li><a class="border" href="#">Nosotros</a></li>
+                <li><a class="border" href="#">Servicios</a></li>
+                <li><a class="border" href="#">Experiencias</a></li>
+                <li><a class="border" href="#">Protocolo COVID</a></li>
+                <li><a class="border" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="left">
+
+            <div class="carousel">
+                <div class="wrap">
+                    <ul>
+                        <li> <img src="./src/img/WhatsApp Image 2021-12-13 at 1.24.52 PM (1).jpeg" />
+                        </li>
+                        <li> <img src="./src/img/WhatsApp Image 2021-12-13 at 1.24.52 PM.jpeg" />
+                        </li>
+                        <li> <img src="./src/img/WhatsApp Image 2021-12-13 at 1.24.53 PM (1).jpeg" />
+                        </li>
+                        <li> <img src="./src/img/fondo.jpeg" />
+                        </li>
+                        <li> <img src="./src/img/navidad.jpeg" />
+                        </li>
+                        <li> <img src="./src/img/preview-141192-Mi0B7jCQQ8-high_0001.jpg" />
+                        </li>
+                        <li> <img src="./src/img/Diego Suescun.jpeg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="right">
+            <h1>AREA DE REGISTRO PACIENTES</h1>
+            <p>Presione para ingresar al formulario de registro</p>
+            <div class="opcion ">
+                <a href="#IrVentanaFlotante">
+                    <img src='https://img2.freepng.es/20180426/dqe/kisspng-computer-icons-editing-pencil-icon-5ae26c015e2166.6839283515247882253856.jpg'
+                        width='50' title='desplegar ventana flotante'>
+                </a>
+            </div>
+
+            <div id="IrVentanaFlotante" class="modal">
+                <div class="ventana">
+                    <a href="#" style='text-decoration:none;'>
+                        X
+                    </a>
+                    <form>
+
+                        <img src="./src/img/Diego Suescun.jpeg" alt="IPS_LOGO">
+                        <div id="datos">
+                            <div class="alineCenter bottomBorder">
+                                <h2>REGISTRO DE VACUNA COVID-19</h2>
+                                <p>llena los siguientes campos y luego dale click en Enviar</p>
+                            </div>
+                            <section class="campos container">
+                                <label for="nombre" class="titulosForm"> NOMBRE: </label>
+                                <label for="Cedula" class="titulosForm margin"> CEDULA: </label>
+                                <input type="text" placeholder="Nombre Completo">
+                                <input type="number" placeholder="Cedula" class="margin">
+                                <label for="ciudad" class="titulosForm"> Fecha de Nacimiento: </label>
+                                <label for="contact" class="titulosForm margin"> Numero de contacto: </label>
+                                <input type="date" id="boxCiudad">
+
+                                <input type="tel" name="contact" id="boxContact" class="margin"
+                                    placeholder="Escriba aqui su numero">
+
+                                <label for="email" class="titulosForm"> Correo electronico: </label>
+                                <label for="text" class="titulosForm margin"> Direccion: </label>
+                                <input type="email" name="email" id="boxEmail" placeholder="Escriba aqui su e-mail">
+                                <input type="text" class="margin" placeholder="Ingrese Direccion">
+                                <label for="text" class="titulosForm"> EPS: </label>
+                                <label for="text" class="titulosForm margin"> Genero: </label>
+                                <input type="text" placeholder="Ingrese EPS">
+                                <div class="genero">
+                                    <label for="M" class="titulosForm margin">M</label>
+                                    <input type="checkbox" name="M" class="checkbox">
+                                    <label for="F" class="titulosForm">F</label>
+                                    <input type="checkbox" name="F" class="checkbox">
+                                </div>
+                                <label for="VACUNA" class="titulosForm">Vacuna</label>
+                                <label for="fechaDosis1" class="titulosForm margin">Fecha dosis 1 </label>
+                                <select name="Vacuna">
+                                    <option value="Pfizer">Pfizer</option>
+                                    <option value="Moderna">Moderna</option>
+                                    <option value="Jhanssen">Jhanssen</option>
+                                    <option value="Atrazeneca">Astrazeneca</option>
+                                    <option value="Atrazeneca">Sinovac</option>
+                                </select>
+                                <input type="date" id="dosis1" class="margin">
+                                <label for="blank"> </label>
+                                <label for="fechaDosis2" class="titulosForm margin">Fecha dosis 2 </label>
+                                <label for="blank"> </label>
+                                <input type="date" id="dosis2" class="margin">
+                            </section>
+                    </form>
+                    <div id="button">
+                        <a href="#" id="sendButton">ENVIAR </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="extremos">
+        <section>
+            <h2>Social Network & WebPage </h2>
+            <nav>
+                <a class="border" href="https://www.instagram.com/securitas_colombia/">instagram</a> |
+                <a class="border" href="https://twitter.com/SecuritasCol">Twitter</a> |
+                <a class="border" href="https://co.linkedin.com/company/securitas-colombia">LinkedIn</a> |
+                <a class="border" href="https://www.securitas.com.co/" target="_blank">Webpage</a>
+            </nav>
+        </section>
+    </footer>
+
+    <script src="./src/js/js.js"></script>
+</body>
+
+</html>
