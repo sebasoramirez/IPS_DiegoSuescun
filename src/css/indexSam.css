@@ -15,9 +15,6 @@ html {
 main {
     flex-grow: 1;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-around;
   }
 .extremos {
     background-color: white;
@@ -70,6 +67,7 @@ main {
     display: grid;
     align-items: center;
     border-radius: 25px;
+
 }
 .home-main-button a{
     font-weight: 500;
@@ -83,10 +81,10 @@ main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
-    background-image: url("../src/img/");
+    background-image: url("../img/preview-141192-Mi0B7jCQQ8-high_0001.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
 
 .home-main section{
@@ -95,4 +93,35 @@ main {
     justify-items: center;
     height: 350px;
     margin-top:80px;
+
 }
+/* Mediacuero */
+@media screen and (max-width: 850px) {
+/*   .carousel {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    margin: auto;
+  } */
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+ section .home-main-text{
+   padding: 0px;
+   width: 100%;
+   margin: 0%;
+   font-size: 30px;
+   }
+
