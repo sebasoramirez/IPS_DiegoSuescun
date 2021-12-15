@@ -185,6 +185,8 @@ select {
   padding: 10px 20px;
   margin: 20% auto;
   position: relative;
+  overflow-y: scroll;
+  scroll-behavior: auto;
 }
 .modal {
   background-color: rgba(0, 0, 0, 0.8);
