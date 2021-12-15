@@ -135,7 +135,10 @@ input {
     transition: background 0.5s;
   } */
 }
-
+select {
+  max-width: 80%;
+  min-height: 20px;
+}
 .colorBox {
   background-color: rgb(248, 244, 244);
   position: relative;
@@ -173,10 +176,12 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .ventana {
   background-color: whitesmoke;
-  width: 800px;
+  max-width: 800px;
+  max-height: 65%;
   padding: 10px 20px;
   margin: 20% auto;
   position: relative;
@@ -347,8 +352,27 @@ body {
     width: 70%;
     margin: auto;
   }
-}
 
+  .ventana {
+    background-color: whitesmoke;
+    max-width: 800px;
+    max-height: 65%;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+  }
+  .modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: -150px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+  }
+}
 @media screen and (max-width: 850px) {
   .carousel {
     position: relative;
@@ -370,6 +394,31 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .ventana {
+    max-width: 500px;
+    max-height: 95%;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+  }
+  .modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: -50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 470px) {
   .carousel {
@@ -385,5 +434,23 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .ventana {
+    max-width: 350px;
+    max-height: 65%;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+  }
+  .modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
   }
 }
