@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base de datos de usuarios con carné de vacunación</title>
+    <title>Base de datos consolidada</title>
     <link rel="stylesheet" href="./src/css/crud.css">
     <script src="https://kit.fontawesome.com/f2a1f91362.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,16 +32,36 @@
             </nav>
         </header>
     <main class="home-main">
-        <section>
-            <p class="home-main-text">Bienvenido a la base de datos de usuarios con esquema de vacunación</p>
-            <button class="home-main-button">
-                <a href="./Actividadform.html">Ingresar a la base de datos</a>
-            </button>
-        </section>
          <section>
              <h2>Consolidado de pacientes</h2>
-             
-
+             <div id="pacientes">
+                     <table>
+                         <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Tipo documento</th>
+                            <th>Documento</th>
+                        </tr>
+                         <tr>
+                             <td>Samuel</td>
+                             <td>Bermudez</td>
+                             <td>CC</td>
+                             <td>10366785609</td>
+                         </tr>
+                         <tr>
+                             <th>Dosis uno</th>
+                             <th>Fabricante</th>
+                             <th>Dosis dos</th>
+                             <th>Fabricante</th>
+                         </tr>
+                         <tr>
+                             <td>25 Julio</td>
+                             <td>Jenssen</td>
+                             <td>No aplica</td>
+                             <td>No aplica</td>
+                         </tr>
+                     </table>
+             </div>
          </section> 
     </main>
     <footer>
@@ -57,5 +77,6 @@
             </section>
         </footer>
     </footer>
+    <script src="./src/js/crud.js"></script>
 </body>
 </html>
