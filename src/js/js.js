@@ -2,7 +2,12 @@
 // By Yair Even-Or
 // written in jQuery 2013 -> refactored to vanilla 2020
 // https://github.com/yairEO/hover-carousel
-
+var paki = {
+  nombre: "Pakiman",
+  ataque: 101,
+};
+paki.ataque = paki.ataque * 2;
+console.log(paki.ataque);
 function HoverCarousel(elm, settings) {
   this.DOM = {
     scope: elm,
