@@ -90,8 +90,8 @@ a {
   grid-column: 2/3;
   grid-row: 1/2;
   justify-content: center;
-  height: 350px;
-  margin-top: 80px;
+  height: 250px;
+  margin-top: 60px;
 }
 
 .home-main #buttons {
