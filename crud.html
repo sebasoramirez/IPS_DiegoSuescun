@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,57 +13,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Roboto+Slab&display=swap" rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <header class="extremos header">
-            <div class="logo"><img src="./src/img/Diego Suescun.jpeg" alt="IPS_LOGO"></div>
-            <nav class="menu">
-                <ul>
-                    <li><a class="border" href="#">Inicio</a></li>
-                    <li><a class="border" href="#">Nosotros</a></li>
-                    <li><a class="border" href="#">Servicios</a></li>
-                    <li><a class="border" href="#">Experiencias</a></li>
-                    <li><a class="border" href="#">Protocolo COVID</a></li>
-                    <li><a class="border" href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="extremos header">
+        <div class="logo"><img src="./src/img/Diego Suescun.jpeg" alt="IPS_LOGO"></div>
+        <nav class="menu">
+            <ul>
+                <li><a class="border" href="#">Inicio</a></li>
+                <li><a class="border" href="#">Nosotros</a></li>
+                <li><a class="border" href="#">Servicios</a></li>
+                <li><a class="border" href="#">Experiencias</a></li>
+                <li><a class="border" href="#">Protocolo COVID</a></li>
+                <li><a class="border" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="home-main">
-         <section>
-             <h2>Consolidado de pacientes</h2>
-             <div id="pacientes">
-                     <table>
-                         <tr>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Tipo documento</th>
-                            <th>Documento</th>
-                        </tr>
-                         <tr>
-                             <td>Samuel</td>
-                             <td>Bermudez</td>
-                             <td>CC</td>
-                             <td>10366785609</td>
-                         </tr>
-                         <tr>
-                             <th>Dosis uno</th>
-                             <th>Fabricante</th>
-                             <th>Dosis dos</th>
-                             <th>Fabricante</th>
-                         </tr>
-                         <tr>
-                             <td>25 Julio</td>
-                             <td>Jenssen</td>
-                             <td>No aplica</td>
-                             <td>No aplica</td>
-                         </tr>
-                     </table>
-             </div>
-         </section> 
+        <div id="buttons">
+            <h2>Editar Registro</h2>
+            <a href="./indexCesar.html">
+                <img src='https://img2.freepng.es/20180426/dqe/kisspng-computer-icons-editing-pencil-icon-5ae26c015e2166.6839283515247882253856.jpg'
+                    width='50' title='Ventana de Edicion'>
+            </a>
+            <h2>Nuevo Registro</h2>
+            <a href="./FormRegistro.html">
+                <img src='https://img2.freepng.es/20180426/dqe/kisspng-computer-icons-editing-pencil-icon-5ae26c015e2166.6839283515247882253856.jpg'
+                    width='50' title='HOME'>
+            </a>
+        </div>
+        <section>
+            <div id="pacientes">
+                <h2 class="margin">Consolidado de pacientes</h2>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Tipo documento</th>
+                        <th>Documento</th>
+                    </tr>
+                    <tr>
+                        <td>Samuel</td>
+                        <td>Bermudez</td>
+                        <td>CC</td>
+                        <td>10366785609</td>
+                    </tr>
+                    <tr>
+                        <th>Dosis uno</th>
+                        <th>Fabricante</th>
+                        <th>Dosis dos</th>
+                        <th>Fabricante</th>
+                    </tr>
+                    <tr>
+                        <td>25 Julio</td>
+                        <td>Jenssen</td>
+                        <td>No aplica</td>
+                        <td>No aplica</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
     </main>
     <footer>
         <footer class="extremos">
@@ -79,4 +93,5 @@
     </footer>
     <script src="./src/js/crud.js"></script>
 </body>
+
 </html>

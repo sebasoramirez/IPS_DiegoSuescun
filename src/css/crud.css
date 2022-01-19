@@ -8,96 +8,113 @@
 
 /* HEADER */
 html {
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth;
-  }
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
 
 main {
-    flex-grow: 1;
-    display: flex;
-  }
+  flex-grow: 1;
+  display: flex;
+}
 .extremos {
-    background-color: white;
-    padding: 1.5rem;
-    border-top: 10px solid rgb(98, 37, 94);
-    border-bottom: 10px solid rgb(98, 37, 94);
-  }
-  ul {
-    list-style-type: none;
-  }
-  a {
-    text-decoration: none;
-  }
-  .border:hover {
-    border-bottom: 5px solid rgb(98, 37, 94);
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  .menu ul {
-    display: flex;
-  }
-  .menu li {
-    padding: 0.5rem;
-  }
-  .menu ul li a {
-    font-weight: bolder;
-    font-size: larger;
-    color: rgb(104, 104, 104);
-  }
-  /* Aqui comienza el Main */
-
-  .home-main-text{
-     font-family: "Inter", sans-serif;
-      font-size: 40px;
-      color: rgb(104, 104, 104);
-  }
-  .home-main-button{
-    width: 110px;
-    height: 100px;
-    background-color:rgb(98, 37, 94);
-    display: grid;
-    align-items: center;
-    border-radius: 25px;
-
+  background-color: white;
+  padding: 1.5rem;
+  border-top: 10px solid rgb(98, 37, 94);
+  border-bottom: 10px solid rgb(98, 37, 94);
 }
-.home-main-button a{
-    font-weight: 500;
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-    color: white;
-    
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.border:hover {
+  border-bottom: 5px solid rgb(98, 37, 94);
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.menu ul {
+  display: flex;
+}
+.menu li {
+  padding: 0.5rem;
+}
+.menu ul li a {
+  font-weight: bolder;
+  font-size: larger;
+  color: rgb(104, 104, 104);
+}
+/* Aqui comienza el Main */
+
+.home-main-text {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  color: rgb(104, 104, 104);
+}
+.home-main-button {
+  width: 110px;
+  height: 100px;
+  background-color: rgb(98, 37, 94);
+  display: grid;
+  align-items: center;
+  border-radius: 25px;
+}
+.home-main-button a {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: white;
 }
 
-.home-main{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    height: 100%;
-    background-image: url("../img/preview-141192-Mi0B7jCQQ8-high_0001.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: none;
+  height: 100%;
+  background-image: url("../img/preview-141192-Mi0B7jCQQ8-high_0001.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.home-main section{
-    display: grid;
-    grid-column: 2;
-    justify-items: center;
-    height: 350px;
-    margin-top:80px;
+.home-main section {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-content: center;
+  height: 350px;
+  margin-top: 80px;
+}
 
+.home-main #buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-column: 3;
+  grid-row: 1/2;
+}
+.home-main #pacientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.margin {
+  margin: 40px;
 }
 /* Mediacuero */
 @media screen and (max-width: 850px) {
-/*   .carousel {
+  /*   .carousel {
     position: relative;
     top: 0;
     right: 0;
@@ -118,10 +135,10 @@ main {
     flex-wrap: wrap;
   }
 
- section .home-main-text{
-   padding: 0px;
-   width: 100%;
-   margin: 0%;
-   font-size: 30px;
-   }
-
+  section .home-main-text {
+    padding: 0px;
+    width: 100%;
+    margin: 0%;
+    font-size: 30px;
+  }
+}
