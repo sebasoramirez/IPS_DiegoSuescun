@@ -59,7 +59,9 @@ a {
   font-family: "Inter", sans-serif;
   font-size: 40px;
   color: rgb(104, 104, 104);
+  text-align: center;
 }
+
 .home-main-button {
   border-radius: 25px;
   display: flex;
